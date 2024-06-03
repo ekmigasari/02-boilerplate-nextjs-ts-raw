@@ -38,6 +38,7 @@ This initial setup provides a TypeScript-enabled Next.js project with ESLint, Ta
 - Default import alias (@/\*)? No
 
 ### Folder Structure
+
 ```
 src/
 |-- app/
@@ -70,3 +71,30 @@ middleware.js
 - `middleware.js`: This file appears to be a middleware script, likely handling server-side logic or middleware functionality. Ensure it's appropriately integrated into your Next.js application, depending on your specific requirements.
 
 By following this organized structure, you establish a clear separation of concerns and facilitate maintainability as your Next.js TypeScript project evolves.
+
+## ESLINT Setup
+
+about eslint
+
+### Config
+
+How would you like to use ESLint?
+To check syntax and find problems
+
+What type of modules does your project use?
+JavaScript modules (import/export)
+
+Which framework does your project use? …
+▸ React
+
+Eslint v8.x
+
+Where does your code run? browser and node
+
+use javascript standar
+
+https://standardjs.com/
+
+## Prisma Setup
+
+## Zod
