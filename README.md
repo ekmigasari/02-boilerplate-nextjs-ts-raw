@@ -92,8 +92,13 @@ Eslint v8.x
 Where does your code run? browser and node
 
 use javascript standar
-
 https://standardjs.com/
+
+Prettier
+https://prettier.io/docs/en/integrating-with-linters.html
+
+eslint-config-prettier
+https://github.com/prettier/eslint-config-prettier/
 
 ## Prisma Setup
 
