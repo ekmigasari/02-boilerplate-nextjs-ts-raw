@@ -72,34 +72,41 @@ middleware.js
 
 By following this organized structure, you establish a clear separation of concerns and facilitate maintainability as your Next.js TypeScript project evolves.
 
-## ESLINT Setup
+## ESLint
 
-about eslint
+**ESLint** is a powerful tool that helps developers maintain code quality by detecting and fixing syntax issues and problematic patterns in JavaScript code.
 
 ### Config
 
-How would you like to use ESLint?
-To check syntax and find problems
+We use the JavaScript standard style guide for this boilerplate.
+You can find more details about it here: https://standardjs.com/
 
-What type of modules does your project use?
-JavaScript modules (import/export)
+For code formatting, we use **Prettier**. please install prettier plugin before start to code.
 
-Which framework does your project use? …
-▸ React
-
-Eslint v8.x
-
-Where does your code run? browser and node
-
-use javascript standar
-https://standardjs.com/
-
-Prettier
+We also use `eslint-config-prettier` to turn off ESLint rules that might conflict with Prettier. You can find more about it here:
 https://prettier.io/docs/en/integrating-with-linters.html
 
-eslint-config-prettier
-https://github.com/prettier/eslint-config-prettier/
+## Prisma
 
-## Prisma Setup
+**Prisma** is a next-generation ORM (Object-Relational Mapping) tool for Node.js and TypeScript, making database access easy and enjoyable.
+
+### Config
+
+We have moved the Prisma folder to `src/db` for better project structure.
+
+In our `package.json`, we have added the following configuration for Prisma:
+
+```
+"prisma": {
+    "schema": "./src/db/schema.prisma"
+}
+
+```
+
+This points Prisma to our schema file located in the src/db directory.
 
 ## Zod
+
+**Zod** is a TypeScript-first schema declaration and validation library. The goal is to eliminate duplicative type declarations. With Zod, you declare a validator once and Zod will automatically infer the static TypeScript type. It's easy to compose simpler types into complex data structures.
+
+more about zod: https://zod.dev/
